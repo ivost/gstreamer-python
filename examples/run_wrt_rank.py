@@ -15,7 +15,7 @@ import gstreamer.utils as utils
 
 TARGET_PLUGIN_NAME = "avdec_h264"
 FREE_RTSP_SOURCE = [
-    "rtsp://freja.hiof.no:1935/rtplive/definst/hessdalen03.stream",
+    "rtsp://192.168.1.129:554/channel1",
     "rtsp://wowzaec2demo.streamlock.net/vod/mp4:BigBuckBunny_115k.mov"
 ]
 DEFAULT_PIPELINE = "rtspsrc location={} ! decodebin ! videoconvert ! gtksink".format(
